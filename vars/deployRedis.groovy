@@ -1,13 +1,13 @@
 def call() {
     // Clone the repository
-    git branch: 'main', url: 'https://github.com/Sanchit2323/Redis-tool2.git'
+    git branch: 'main', url: 'https://github.com/Sanchit2323/Redis-ansible.git'
 
     // User Approval
     input message: 'Approve the deployment?', submitter: 'admin,sanchit'
 
     // Playbook Execution
     ansiblePlaybook(
-        inventory: 'inventory.ini',
+        inventory: 'aws_ec2.yml',
         playbook: 'replicated.yml'
     )
 
