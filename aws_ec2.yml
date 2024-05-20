@@ -6,9 +6,8 @@ regions:
 
 filters:
   tag:Name:
-    - "redis_privateec2"
-    - "redis_privateec1"
-    - "redis_privateec3"
+    - "redis2"
+    - "redis1"
 
 compose:
     ansible_host: private_ip_address
