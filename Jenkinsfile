@@ -12,7 +12,7 @@ pipeline {
                 script {
                     ansiblePlaybook(
                         playbook: 'install.yml',
-                        inventory: 'aws_ec2.yaml',
+                        inventory: 'aws_ec2.yml',
                         credentialsId: 'Sanchit3.pem'
                     )
                 }
