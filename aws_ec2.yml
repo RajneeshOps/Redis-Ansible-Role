@@ -1,0 +1,14 @@
+---
+plugin: aws_ec2
+
+regions:
+   - ap-south-1
+
+filters:
+  tag:Name:
+    - "redis_privateec2"
+    - "redis_privateec1"
+    - "redis_privateec3"
+
+compose:
+    ansible_host: private_ip_address
